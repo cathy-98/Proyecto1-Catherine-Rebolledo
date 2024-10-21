@@ -18,6 +18,9 @@
             /* Texto gris oscuro */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         h1,
@@ -29,54 +32,43 @@
 
         .navbar {
             background-color: #ffffff;
-            /* Fondo blanco */
         }
 
         .navbar-nav .nav-link {
             color: #007bff;
-            /* Azul para enlaces */
         }
 
         .navbar-nav .nav-link:hover {
             color: #0056b3;
-            /* Azul más oscuro al pasar el ratón */
         }
 
         .btn-primary {
             background-color: #ff5722;
-            /* Naranja intenso */
             border-color: #ff5722;
         }
 
         .btn-primary:hover {
             background-color: #e64a19;
-            /* Naranja más oscuro */
+
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
 
         .card {
             border: none;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            /* Sombra para las cajas */
         }
+
 
         footer {
             width: 100%;
-            position: relative;
-            bottom: 0;
             background-color: #343a40;
-            /* Fondo gris oscuro */
             color: white;
             padding: 30px 0;
-        }
-
-        footer a {
-            color: #ff5722;
-            /* Naranja en el pie de página */
-        }
-
-        footer a:hover {
-            color: #ff7043;
-            /* Acento de naranja claro */
         }
     </Style>
 </head>
@@ -112,10 +104,11 @@
     <!--Presentación compromiso hospital-->
     <section>
         <h1 class="text-center">Conoce a nuestro equipo médico</h1>
-        <div class="container-fluid"></div>
-        <p class="text-center">En nuestro hospital, nuestro equipo médico combina excelencia técnica y un compromiso
-            genuino con el bienestar de cada paciente. Cada atención refleja nuestro enfoque humano y profesional,
-            asegurando salud con corazón </p>
+        <div class="container-fluid">
+            <p class="text-center">En nuestro hospital, nuestro equipo médico combina excelencia técnica y un compromiso
+                genuino con el bienestar de cada paciente. Cada atención refleja nuestro enfoque humano y profesional,
+                asegurando salud con corazón </p>
+        </div>
         </div>
     </section>
 
@@ -127,7 +120,8 @@
             <!--Card Primer doctor-->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <div class="card text-center">
-                    <img src="doctor1.jpg" class="card-img-top" alt="Doctor Urgencias">
+                    <img src="https://images.ecestaticos.com/t5SPttdKoWWiDUPi9k0lx7OGsSY=/0x70:1716x1040/972x547/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F8db%2F8b6%2Faa5%2F8db8b6aa54b585253e15f79a68447aeb.jpg"
+                        class="card-img-top" alt="Doctor Urgencias">
                     <div class="card-body">
                         <h5 class="card-title">Dr. Juan Pérez</h5>
                         <p class="card-text">Especialista en Urgencias 24/7. Atención médica urgente en cualquier
@@ -139,7 +133,8 @@
             <!--Card Segundo doctor-->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <div class="card text-center">
-                    <img src="doctor2.jpg" class="card-img-top" alt="Doctor Consultas Médicas">
+                    <img src="https://t1.uc.ltmcdn.com/es/posts/0/0/3/como_se_dice_la_medica_o_la_medico_30300_600.webp"
+                        class="card-img-top" alt="Doctor Consultas Médicas">
                     <div class="card-body">
                         <h5 class="card-title">Dra. María López</h5>
                         <p class="card-text">Especialista en Consultas Médicas. Atención personalizada con nuestros
@@ -151,7 +146,8 @@
             <!--Card Tercer doctor-->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <div class="card text-center">
-                    <img src="doctor3.jpg" class="card-img-top" alt="Doctor Hospitalización">
+                    <img src="https://ahoradoctor.cl/wp-content/uploads/doctor-gafas-ahoradoctor-768x768.jpg"
+                        class="card-img-top" alt="Doctor Hospitalización">
                     <div class="card-body">
                         <h5 class="card-title">Dr. Carlos Martínez</h5>
                         <p class="card-text">Especialista en Hospitalización. Habitaciones confortables para tu
@@ -163,7 +159,8 @@
             <!--Card Cuarto doctor-->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <div class="card text-center">
-                    <img src="doctor4.jpg" class="card-img-top" alt="Doctor Hospitalización">
+                    <img src="https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/solo-el-8-de-las-medicas-alcanza-puestos-de-responsabilidad-en-hospitales/3405721-5-esl-MX/Solo-el-8-de-las-medicas-alcanza-puestos-de-responsabilidad-en-hospitales.jpg"
+                        class="card-img-top" alt="Doctor Hospitalización">
                     <div class="card-body">
                         <h5 class="card-title">Dra. Elena García</h5>
                         <p class="card-text">Especialista en Hospitalización. Habitaciones confortables para tu
